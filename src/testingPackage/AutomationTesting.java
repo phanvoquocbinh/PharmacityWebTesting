@@ -61,7 +61,6 @@ public class AutomationTesting {
 	public void TC_02() {
 		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", 
 		driver.findElement(By.xpath("//span[text()='DEAL SỐC MUA 2 TẶNG 2 - CHỈ TỪ 34.5000Đ/BỘ']")));
-		
 		WebElement lable = driver.findElement(By.xpath("//img[contains(@src,'https://data-service.pharmacity.io/pmc-upload-media/development/pmc-ecm-core/promotions')]//"
 				+ "ancestor::div//div[text()='Dụng cụ xét nghiệm nhanh kháng nguyên SARS-CoV-2 SureScreen Diagnostics Covid-19 Test Kit (Hộp 25 Test)']"));
 		lable.click();
