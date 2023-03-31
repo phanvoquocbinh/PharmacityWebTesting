@@ -42,14 +42,14 @@ public class AutomationTesting {
 		 driver.get("https://pmc-ecm-store.dev.pharmacity.io/");
 		 //driver.get("hhttps://www.pharmacity.vn/");
 		 driver.manage().window().maximize();
-		 sleepInSecond(1);
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		 driver.findElement(By.xpath("//p[text()='Đăng nhập']")).click();
-		 sleepInSecond(1);
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		 driver.findElement(By.xpath("//a[text()='Đăng nhập bằng mật khẩu']")).click(); 
 		 phone=driver.findElement(By.xpath("//input[@name='phone']"));
 		 password=driver.findElement(By.xpath("//input[@name='otp']"));
 		 phone.sendKeys("0914497337"); password.sendKeys("123456789");
-		 sleepInSecond(1);
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);;
 		 driver.findElement(By.xpath("//button[text()='Đăng nhập']")).click();
 		 driver.findElement(By.xpath("//button[@type='submit']")).click();
 		 System.out.println("TH1: Test Login thành công");
