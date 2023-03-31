@@ -64,6 +64,7 @@ public class AutomationTesting {
 		WebElement lable = driver.findElement(By.xpath("//img[contains(@src,'https://data-service.pharmacity.io/pmc-upload-media/development/pmc-ecm-core/promotions')]//"
 				+ "ancestor::div//div[text()='Dụng cụ xét nghiệm nhanh kháng nguyên SARS-CoV-2 SureScreen Diagnostics Covid-19 Test Kit (Hộp 25 Test)']"));
 		lable.click();
+		
 		}
 
 
